@@ -1,0 +1,26 @@
+https://www.python.jp/install/ubuntu/index.html
+
+sudo apt update
+sudo apt install build-essential libbz2-dev 
+sudo apt install libdb-dev libreadline-dev libffi-dev 
+sudo apt install libgdbm-dev liblzma-dev libncursesw5-dev
+sudo apt install libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev
+wget https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz
+tar xJf Python-3.8.4.tar.xz
+cd Python-3.8.4
+./configure
+make
+sudo make install
+
+sudo apt install curl
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+cat /etc/apt/sources.list.d/vscode.list 
+sudo apt install apt-transport-https
+sudo apt install code
+
+sudo pip3 install torch torchvision
+
+
+
+
